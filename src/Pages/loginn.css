@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+body {
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.form-style input {
+  border: 0;
+  height: 35px;
+  border-radius: 0;
+}
+
+button {
+  height: 40px;
+}
+
+img.login-pattern {
+  width: 100%;
+  object-fit: contain;
+  height: 100vh;
+}
+
+.login-pattern {
+  background: linear-gradient(
+    180deg,
+    #0231c8 -57.13%,
+    #081872 52.12%,
+    #091464 82.68%,
+    #0a1158 112.62%,
+    #0a1158 112.64%
+  );
+}
+.Auth-form-title {
+  color: #0231c8;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.signing-to-continue {
+  color: #797979;
+  font-style: normal;
+  font-weight: 500;
+}
+span {
+  color: brown;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #647484;
+  font-style: normal;
+}
+
+input.form-control {
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f9fb;
+}
+
+.form-group {
+  position: relative;
+}
+.link {
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+}
+.form-group::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  bottom: 18px;
+  width: 15px;
+  background: url('../images/email.svg') center / contain no-repeat;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(255, 225, 180); */
+}
+
+/* .login-footer img {
+  z-index: 1;
+} */
+.sign-in-btn {
+  background-color: #0231c8;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .form-style input {
+    height: 50px;
+  }
+  .signing-to-continue {
+    margin-bottom: 30px;
+  }
+  .login-footer {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  .signing-to-continue {
+    margin-bottom: 40px;
+  }
+  .login-footer {
+    margin-top: 40px;
+  }
+  .Auth-form-title {
+    margin-top: 30px;
+    /* margin-bottom: 10px; */
+  }
+}

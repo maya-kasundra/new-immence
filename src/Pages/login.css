@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+body,
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.main-left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+h3.Auth-form-title {
+  text-align: left;
+  color: #0231c8;
+  font-weight: bold;
+}
+input.form-control {
+  border: none;
+  background-color: #f7f9fb;
+  border-radius: 10px;
+}
+.signing-to-continue {
+  color: #797979;
+}
+.btn-sing-in {
+  background-color: #0231c8;
+  color: white;
+}
+.main-right-container {
+  height: 100vh;
+  width: 100%;
+}
+img.login-pattern {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.login-pattern {
+  background: linear-gradient(
+    180deg,
+    #0231c8 -57.13%,
+    #081872 52.12%,
+    #091464 82.68%,
+    #0a1158 112.62%,
+    #0a1158 112.64%
+  );
+}
+
+.form-group {
+  position: relative;
+}
+.form-group::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  bottom: 0;
+  width: 15px;
+  background: url('../images/email.svg') center / contain no-repeat;
+}
+.link {
+  position: absolute;
+  right: 0px;
+  bottom: 41px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.Auth-form {
+  width: 653px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+span {
+  color: brown;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #647484;
+  font-style: normal;
+}
+input {
+  background-color: #f7f9fb;
+}
+.login-footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 991px) {
+  /* .Auth-form-content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .main-left-container {
+    height: 93vh;
+    width: 100vw;
+  }
+  .main-right-container {
+    display: none;
+  }
+  .Auth-form {
+    width: 750px;
+    margin: 95px;
+  }
+
+  .login-footer img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .form-control {
+    padding-top: 20px;
+    padding: 13px;
+  }
+
+  .form-group::after {
+    top: 25px;
+  }
+  .btn-sing-in {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  h3.Auth-form-title {
+    font-size: 30px;
+  }
+  .link {
+    bottom: 53px;
+  }
+  .signing-to-continue {
+    font-size: 22px;
+  } */
+}
+@media only screen and (max-width: 767px) {
+  .main-right-container {
+    display: none;
+  }
+  .main-left-container {
+    height: 93vh;
+    width: 100vw;
+    background-color: burlywood;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
