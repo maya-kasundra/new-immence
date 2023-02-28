@@ -114,11 +114,7 @@ const Sidebar = () => {
             <p>UPCOMING HOLIDAYS</p>
             <div className="d-flex">
               {CardsData.map((element, id) => {
-                return (
-                  <>
-                    <div></div>
-                  </>
-                )
+                return <></>
               })}
             </div>
           </div>
