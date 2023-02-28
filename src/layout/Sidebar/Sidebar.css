@@ -129,3 +129,9 @@ h5 {
 small {
   color: #404040;
 }
+
+.card-body {
+  top: 20;
+  left: 0;
+  bottom: 0;
+}

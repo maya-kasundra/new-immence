@@ -25,6 +25,7 @@ import PersonVector from '../../images/sidebar-svg/person-vector.svg'
 import polygon from '../../images/sidebar-svg/Polygon.svg'
 import republic from '../../images/sidebar-svg/republic-svg.svg'
 import poojaImg from '../../images/sidebar-svg/pooja.svg'
+import colorHoli from '../../images/home-img/color-holi.png'
 import { Card, Form } from 'react-bootstrap'
 
 // // import Button from 'react-bootstrap/Button'
@@ -114,7 +115,25 @@ const Sidebar = () => {
             <p>UPCOMING HOLIDAYS</p>
             <div className="d-flex">
               {CardsData.map((element, id) => {
-                return <></>
+                return (
+                  <>
+                    <Card
+                      style={{ width: '9rem', border: 'none' }}
+                      className="mx-2 mt-3 holiday-cards position-relative"
+                    >
+                      <Card.Img
+                        variant="top"
+                        src={colorHoli}
+                        // style={{ height: '5rem', borderRadius: '50%' }}
+                        // className="mt-3"
+                      />
+                      <Card.Body className="card-body position-absolute">
+                        <p>{element.name}</p>
+                        <small>on Monday, 30 January</small>
+                      </Card.Body>
+                    </Card>
+                  </>
+                )
               })}
             </div>
           </div>
