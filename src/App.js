@@ -6,7 +6,9 @@ import Sidebar from './layout/Sidebar/Sidebar'
 function App() {
   return (
     <Routes>
+      {/* <Sidebar /> */}
       <Route path="/" element={<Sidebar />}></Route>
+      {/* <Route path="/" element={<Sidebar />}></Route> */}
     </Routes>
   )
 }
